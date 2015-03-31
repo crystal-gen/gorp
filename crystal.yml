@@ -12,6 +12,27 @@ repository:
   type: git
   url: https://github.com/studiotate/crystal-gorp.git
 
+gen:
+  file:
+    models:
+      dest: "models/{{name.pascal}}.go"
+      mapping:
+        model:
+          details:
+            type:
+              bool: Boolean
+              created: Date
+              date: int64
+              decimal: Number
+              deleted: int64
+              id: int64
+              number: int64
+              select: string
+              string: string
+              text: string
+              updated: int64
+      spec: models
+
 generators:
   project:
     version: latest

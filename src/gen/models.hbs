@@ -1,0 +1,5 @@
+type {{name.pascal}} struct {
+  {{#details}}
+  {{detail.name.pascal}} {{detail.type}}{{#if detail.is.id}} `db:"{{model.name.lower}}_id"`{{/if}}
+  {{/details}}
+}

@@ -1,0 +1,7 @@
+name: gorp-test
+version: 0.1.0
+description: gorp test
+
+generators:
+  gorp:
+    version: latest
